@@ -1,5 +1,4 @@
 import { StyleSheet, Image } from 'react-native';
-import { Video } from 'expo-av';
 
 
 export default function ImageViewer({ placeholderImageSource, selectedImage }) {
@@ -13,8 +12,8 @@ export default function ImageViewer({ placeholderImageSource, selectedImage }) {
 
 const styles = StyleSheet.create({  
   image: {
-    width: 315,
-    height: 700,
+    width: 270,
+    height: 600,
     borderRadius: 10,
   },
 });

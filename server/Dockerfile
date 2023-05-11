@@ -20,3 +20,5 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 # to be equal to the cores available.
 # Timeout is set to 0 to disable the timeouts of the workers to allow Cloud Run to handle instance scaling.
 EXPOSE 8080
+CMD exec python Server.py
+eas build -p android --profile preview
